@@ -3,7 +3,7 @@ ifndef INCLUDE
     INCLUDE = ../include
 endif
 
-CC = gcc
+CC := $(CROSS_COMPILE)gcc
 CFLAGS = -O2 -Wall -Wextra -pedantic -I$(INCLUDE)
 
 TARGETS = sread swrite master rslave sslave

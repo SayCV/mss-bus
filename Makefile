@@ -4,9 +4,9 @@
 all:
 	cd ./doc; $(MAKE)
 ifdef DEBUG
-	cd ./src; $(MAKE) INCLUDE=$(PWD)/include
+	cd ./src; $(MAKE) 
 else
-	cd ./src; $(MAKE) INCLUDE=$(PWD)/include DEBUG=$(DEBUG)
+	cd ./src; $(MAKE) DEBUG=$(DEBUG)
 endif
 
 clean:

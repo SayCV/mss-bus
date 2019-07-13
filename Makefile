@@ -2,7 +2,7 @@
 .PHONY : all clean
 
 all:
-	cd ./doc; $(MAKE)
+	#cd ./doc; $(MAKE)
 ifdef DEBUG
 	cd ./src; $(MAKE) 
 else
